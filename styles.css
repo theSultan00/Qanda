@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,700&display=swap');
+
+
+@-webkit-keyframes swing {
+    0%,
+    100% {
+      -webkit-transform: rotate(-10deg);
+    }
+    50% {
+      -webkit-transform: rotate(10deg);
+    }
+  }
+  
+  * {
+    -webkit-transition: all .5s ease-in-out;
+  }
+  
+  
+  #lamp {
+    position: relative;
+    margin-left: 49.85%;
+    background-color: black;
+    height: 120px;
+    width: 2px;
+    -webkit-animation: swing 4s ease-in-out 1s infinite;
+    -webkit-transform-origin: 0% 0%;
+  }
+  
+  #bulb {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: beige ;
+    position: absolute;
+    top: 118%;
+    left: -36px;
+    box-shadow: inset 2px 2px 9px rgba(255, 255, 255, .2), inset -2px -2px 9px rgba(255, 255, 255, .2);
+    -webkit-transition: all .1s ease-in;
+  }
+  
+  #stem1 {
+    position: absolute;
+    top: 100.5%;
+    left: -1px;
+    height: 15px;
+    width: 3px;
+    background-color: purple;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  #stem2 {
+    position: absolute;
+    top: 109.5%;
+    left: -3px;
+    height: 10px;
+    width: 7px;
+    background-color: black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    left: 200%;
+  }
+  
+  #filament {
+    width: 3px;
+    background-color: rgba(0,0,0, .1);
+    position: absolute;
+    top: 118%;
+    left: -1px;
+    height: 20px;
+  }
+  
+  #filament2 {
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    border: 2px solid rgba(0,0,0, .1);
+    position: absolute;
+    top: 134%;
+    left: -4px;
+  }
+  
+  nav:hover > #lamp > #bulb {
+    background-color: yellow;
+    box-shadow: none;
+    box-shadow: 0px 0px 25px 25px rgba(255, 187, 115, .4);
+    z-index: 10000;
+  }
+  
+ 
+
+body{
+    padding : 0;
+    margin : 0;
+    height: 100vh;
+}
+
+
+
+#logo{
+    margin-top: 30px;
+    margin-left : 40px;
+    float:left;
+}
+
+#menu-icon{
+    margin-top: 40px;
+    margin-right : 80px;
+    float:right;
+}
+
+main{
+    position:absolute;
+    top:22%;
+    width : 80% ;
+    padding:9%;
+    margin : 0 auto;
+}
+
+h1{
+    font-family: 'Grandstander', cursive;
+    text-align : center;
+    margin : 50px;
+}
+span{
+    color: #FF304F;
+}
+
+.component{
+    padding : 5%;
+    width : 71% ;
+    margin : 0 auto;
+    border : 1px solid white;
+    border-radius : 15px;
+    box-shadow: 2px 2px 5px rgba(55, 70, 119, 0.5);
+}
+.inputs{
+    margin:0 auto;
+}
+
