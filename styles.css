@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,700&display=swap');
 
 
+
+body{
+    padding : 0;
+    margin : 0;
+    height: 100vh;
+}
+
+ /* styling for the swinging lamp */
+
 @-webkit-keyframes swing {
     0%,
     100% {
@@ -91,14 +100,7 @@
     z-index: 10000;
   }
   
- 
-
-body{
-    padding : 0;
-    margin : 0;
-    height: 100vh;
-}
-
+          /* end of styling for the swinging lamp */
 
 
 #logo{
@@ -131,14 +133,66 @@ span{
 }
 
 .component{
-    padding : 5%;
+    padding : 3.5%;
     width : 71% ;
     margin : 0 auto;
     border : 1px solid white;
     border-radius : 15px;
     box-shadow: 2px 2px 5px rgba(55, 70, 119, 0.5);
 }
+
+.container{
+  display:flex;
+  justify-content: center;
+  margin-bottom:2%;
+}
+
+input[type="text"]{
+  font: 600 1em 'Raleway', sans-serif;
+  text-align: center;
+  color: #686f77;
+  padding: 0.8%;
+  border-radius: 15px;
+  border-right:none;
+  width:60%;
+  outline:none;
+}
+
+
+input[type="text"]::placeholder{
+  font: 800 1em 'Raleway', sans-serif;
+  color: #686f77;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.001em;
+}
+
+button{
+  border-left:none;
+  border-radius:15px;
+  outline:none;
+  background-color:white;
+}
+
+button > img{
+  width:30px;
+  height:30px;
+}
+
 .inputs{
+    display:flex;
+    justify-content: center;
     margin:0 auto;
+    padding:0.5%;
+}
+
+.select-boxes{
+  font: 600 0.8em 'Raleway', sans-serif;
+  padding:0.3%;
+  outline:none;
+  border-radius:15px;
+  color: rgb(10, 9, 66);
+  background-color:beige;
+  margin : 0 auto;
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qanda</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,12 +30,69 @@
         <h1>Let's find you that <span>question</span>, shall we <i class="em em-smiley" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH"></i></h1>
         
         <div class="component">
+
+            <div class="container">
+                <input type="text" placeholder="Enter course code in this format (CSC101)">
+                <button type="submit"><img src="assets/search-icon.png"></button>
+            </div>
+
             <div class="inputs">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">  
+
+                <select class="select-boxes" id="year">
+                    <option value="" selected disabled>QUESTION YEAR</option>
+                    <option value="">2011</option>
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                </select>
+
+                <select class="select-boxes" id="faculty">
+                    <option value="" selected disabled>FACULTY</option>
+                    <option value="">ARTS</option>
+                    <option value="">EDUCATION</option>
+                    <option value="">SCIENCE</option>
+                    <option value="">SOCIAL-SCIENCE</option>
+                </select>
+
+                 <select class="select-boxes" id="department">
+                    <option value="" selected disabled>DEPARTMENT</option>
+                    <option value="">BIOCHEMISTRY</option>
+                    <option value="">BIOLOGY</option>
+                    <option value="">BOTANY</option>
+                    <option value="">CHEMISTRY</option>
+                    <option value="">COMPUTER SCIENCE</option>
+                    <option value="">ECONOMICS</option>
+                    <option value="">ENGLISH LANGUAGE</option>
+                    <option value="">FRENCH</option>
+                    <option value="">GEOGRAPHY</option>
+                    <option value="">GEOLOGY</option>
+                    <option value="">HISTORY</option>
+                    <option value="">MATHEMATICS</option>
+                    <option value="">MICROBIOLOGY</option>
+                    <option value="">PHYSICS</option>
+                    <option value="">POLITICAL SCIENCE</option>
+                    <option value="">SOCIOLOGY</option>
+                    <option value="">ZOOLOGY</option>
+                </select>
+
+                <select class="select-boxes" id="level">
+                    <option value="" selected disabled>LEVEL</option>
+                    <option value="">100</option>
+                    <option value="">200</option>
+                    <option value="">300</option>
+                    <option value="">400</option>
+                </select>
+                <select class="select-boxes" id="semester">
+                    <option value="" selected disabled>SEMESTER</option>
+                    <option value="">1ST</option>
+                    <option value="">2ND</option>
+                </select>  
             </div>
             
         </div>  
