@@ -7,6 +7,7 @@ it aims to help students get examination past questions faster and very easy. Ha
 * HTML
 * CSS
 * JSON
+* Firebase cloud storage
 * GIT & GITHUB
 
 ## Preview
