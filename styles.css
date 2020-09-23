@@ -139,6 +139,7 @@ span{
     border : 1px solid white;
     border-radius : 15px;
     box-shadow: 2px 2px 5px rgba(55, 70, 119, 0.5);
+    background-color: beige;
 }
 
 .container{
