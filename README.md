@@ -11,3 +11,7 @@ it aims to help students get examination past questions faster and very easy. Ha
 * GIT & GITHUB
 
 ## Preview
+
+### Hero page 
+
+![hero page for the qanda website](preview/heropage.png)
