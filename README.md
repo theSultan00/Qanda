@@ -15,3 +15,5 @@ it aims to help students get examination past questions faster and very easy. Ha
 ### Hero page 
 
 ![hero page for the qanda website](preview/heropage.png)
+
+### search page
