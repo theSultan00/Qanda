@@ -1,21 +1,35 @@
+/* font imports  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* removing default body  margin and padding */
 body{
     margin:0;
     padding:0;
     width: 100%;
 }
 
+/* styling the webpage scrollbar */
+body::-webkit-scrollbar {
+    width: .8em;  
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:#3FB1B5;
+  outline: none;
+}
+
+/* setting header element to a 100 viewheight  */
+
 header{
     height:100vh;
 }
-/* nav{
-    position:sticky;
-    top:0;
-} */
+
+/* logo styles */
 nav img {
     padding:3em 0 0 5em;
 }
+
+/* navigation links styles */
 nav ul{
     list-style-type: none;
     display:inline;
@@ -45,6 +59,8 @@ nav .links:hover{
      color:#ffffff;
   
 }
+
+/* styling the hero page  */
 
 .container{
     position:relative;
@@ -78,6 +94,7 @@ nav .links:hover{
     color:#3FB1B5;
 }
 
+/* styles and animations for the call to action link */
 .cta{
     position:relative;
     top:10%;
@@ -102,10 +119,12 @@ nav .links:hover{
     padding:.85em;
 }
 
+/* setting the main element to a 100 viewheight  */
 main{
     height: 100vh;
 }
 
+/* main search component container */
 .search-component{
     position: relative;
     left: 40%;
@@ -113,6 +132,7 @@ main{
     width:40%;
 }
 
+/* styles for the text input field */
 .search-field{
     width:50%;
     padding:1em;
@@ -145,6 +165,7 @@ main{
     cursor: pointer;
 }
 
+/* styling the search filter area */
 .filter{
     margin-top:.5em;
     width:13%;
@@ -195,16 +216,7 @@ main{
     cursor: pointer;
 }
 
-
-
-body::-webkit-scrollbar {
-    width: .8em;  
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color:#3FB1B5;
-  outline: none;
-}
+/* footer styles */
 
 .footer{
     position:relative;
