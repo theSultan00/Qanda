@@ -1,198 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
-    padding : 0;
-    margin : 0;
-    height: 100vh;
+    margin:0;
+    padding:0;
+    width: 100%;
 }
 
- /* styling for the swinging lamp */
-
-@-webkit-keyframes swing {
-    0%,
-    100% {
-      -webkit-transform: rotate(-10deg);
-    }
-    50% {
-      -webkit-transform: rotate(10deg);
-    }
-  }
-  
-  * {
-    -webkit-transition: all .5s ease-in-out;
-  }
-  
-  
-  #lamp {
-    position: relative;
-    margin-left: 49.85%;
-    background-color: black;
-    height: 120px;
-    width: 2px;
-    -webkit-animation: swing 4s ease-in-out 1s infinite;
-    -webkit-transform-origin: 0% 0%;
-  }
-  
-  #bulb {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background-color: beige ;
-    position: absolute;
-    top: 118%;
-    left: -36px;
-    box-shadow: inset 2px 2px 9px rgba(255, 255, 255, .2), inset -2px -2px 9px rgba(255, 255, 255, .2);
-    -webkit-transition: all .1s ease-in;
-  }
-  
-  #stem1 {
-    position: absolute;
-    top: 100.5%;
-    left: -1px;
-    height: 15px;
-    width: 3px;
-    background-color: purple;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-  }
-  
-  #stem2 {
-    position: absolute;
-    top: 109.5%;
-    left: -3px;
-    height: 10px;
-    width: 7px;
-    background-color: black;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-  }
-  
-  input[type="radio"] {
-    position: absolute;
-    left: 200%;
-  }
-  
-  #filament {
-    width: 3px;
-    background-color: rgba(0,0,0, .1);
-    position: absolute;
-    top: 118%;
-    left: -1px;
-    height: 20px;
-  }
-  
-  #filament2 {
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    border: 2px solid rgba(0,0,0, .1);
-    position: absolute;
-    top: 134%;
-    left: -4px;
-  }
-  
-  nav:hover > #lamp > #bulb {
-    background-color: yellow;
-    box-shadow: none;
-    box-shadow: 0px 0px 25px 25px rgba(255, 187, 115, .4);
-    z-index: 10000;
-  }
-  
-          /* end of styling for the swinging lamp */
-
-
-#logo{
-    margin-top: 30px;
-    margin-left : 40px;
-    float:left;
+header{
+    height:100vh;
+}
+/* nav{
+    position:sticky;
+    top:0;
+} */
+nav img {
+    padding:3em 0 0 5em;
+}
+nav ul{
+    list-style-type: none;
+    display:inline;
+    margin:0;
+    padding:0;
 }
 
-#menu-icon{
-    margin-top: 40px;
-    margin-right : 80px;
-    float:right;
+nav li{
+    float: right;
+    padding: 3em 2.5em 0 2.5em;
 }
 
-main{
-    position:absolute;
-    top:22%;
-    width : 80% ;
-    padding:9%;
-    margin : 0 auto;
+nav .links{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    font-weight:bold;
+    color: #24334A;
+    padding:.4em;
+    border: 1px solid #ffffff;
+    border-radius:15px;
 }
 
-h1{
-    font-family: 'Grandstander', cursive;
-    text-align : center;
-    margin : 50px;
-}
-span{
-    color: #FF304F;
-}
-
-.component{
-    padding : 3.5%;
-    width : 71% ;
-    margin : 0 auto;
-    border : 1px solid white;
-    border-radius : 15px;
-    box-shadow: 2px 2px 5px rgba(55, 70, 119, 0.5);
-    background-color: beige;
+nav .links:hover{
+    border: 2px solid #e0e1e2;
+     background-color :#46eaf0;
+     color:#ffffff;
+  
 }
 
 .container{
-  display:flex;
-  justify-content: center;
-  margin-bottom:2%;
+    position:relative;
+    top:10%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
-input[type="text"]{
-  font: 600 1em 'Raleway', sans-serif;
-  text-align: center;
-  color: #686f77;
-  padding: 0.8%;
-  border-radius: 15px;
-  border-right:none;
-  width:60%;
-  outline:none;
+.description{
+    margin:0;
+    padding:3em;
 }
 
-
-input[type="text"]::placeholder{
-  font: 800 1em 'Raleway', sans-serif;
-  color: #686f77;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.001em;
+.description div{
+    width:80%;
+    padding:2em;
 }
 
-button{
-  border-left:none;
-  border-radius:15px;
-  outline:none;
-  background-color:white;
+.description p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    font-weight:bold;
+    text-align: left;
+    color: #24334A;
+    line-height: 2em;
+    letter-spacing: .125em;
 }
 
-button > img{
-  width:30px;
-  height:30px;
+.colored-text{
+    color:#3FB1B5;
 }
 
-.inputs{
+.cta{
+    position:relative;
+    top:10%;
+    left:3%;
+}
+
+.animate__animated.animate__wobble {
+    --animate-duration: 20s;
+    --animate-delay: 0.9s;
+    --animate-repeat: 5;
+
+  }
+
+.cta a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #FE5244;
+    border:1px solid #FE5244;
+    border-radius:20px;
+    padding:.85em;
+}
+
+main{
+    height: 100vh;
+}
+
+.search-component{
+    position: relative;
+    left: 40%;
+    top: 30%;
+    width:40%;
+}
+
+.search-field{
+    width:50%;
+    padding:1em;
+    background-color: #FAF9F9;
+    border:1px solid #FAF9F9;
+    border-radius: 20px;
+}
+
+.search-field input[type="text"]{
+    width:80%;
+    border:1px solid #FAF9F9;
+    background-color: #FAF9F9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight:700;
+    color:#24334A;
+    outline:none;
+}
+
+.search-field button{
+    background-color: #FAF9F9;
+    color:#24334A;
+    font-size: 1.5em;
+    font-weight:bold;
+    border:none;
+    outline:none;
+}
+
+.search-field button:hover{
+    cursor: pointer;
+}
+
+.filter{
+    margin-top:.5em;
+    width:13%;
+    padding:.3em;
+    border: 2px solid #FE5244;
+    border-radius:10px;
+    font-family: 'Poppins', sans-serif;
+    color:#24334A;
+    font-size: .85em;
+    font-weight:bold;
+    text-align: center;
+}
+
+.filter-inputs{
+    position:absolute;
+    right:60%;
+    width:45%;
+    padding:0;
+    margin:0;
     display:flex;
-    justify-content: center;
-    margin:0 auto;
-    padding:0.5%;
 }
 
-.select-boxes{
-  font: 600 0.8em 'Raleway', sans-serif;
-  padding:0.3%;
-  outline:none;
-  border-radius:15px;
-  color: rgb(10, 9, 66);
-  background-color:beige;
-  margin : 0 auto;
+.filter-inputs ul{
+    list-style-type: none;
+}
+
+.filter-inputs li{
+    padding:0;
+}
+
+.filter-inputs .select-boxes{
+    width:90%;
+    border:none;
+    outline:none;
+    color:#24334A;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    font-weight:bold;
+    text-align: left;
+    line-height: 3em;
+    outline:none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.filter-inputs .select-boxes:hover{
+    cursor: pointer;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: .8em;  
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:#3FB1B5;
+  outline: none;
+}
+
+.footer{
+    position:relative;
+    top:80%;
+    background-color:  #FE5244;
+    padding:1.85em;
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight:bold;
 }
