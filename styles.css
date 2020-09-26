@@ -9,14 +9,14 @@ body{
 }
 
 /* styling the webpage scrollbar */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: .8em;  
 }
  
 body::-webkit-scrollbar-thumb {
   background-color:#3FB1B5;
   outline: none;
-}
+} */
 
 /* setting header element to a 100 viewheight  */
 
@@ -228,4 +228,16 @@ main{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
     font-weight:bold;
+}
+
+@media screen and (max-width:414px){
+    svg{
+        display:flex;
+        justify-content: center;
+        width:350px;
+        height:300px;
+        position:relative;
+        top:10%;
+        left:8.2%;
+    } 
 }
