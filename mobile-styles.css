@@ -1,3 +1,154 @@
-@media screen and (max-width : 479px){
 
+body{
+     margin:0;
+     padding:0;
+     width: 100%;
+}
+
+header{
+     height:100vh;
+}
+
+nav img {
+     padding:1.5em 0 0 1.5em;
+    width:20%;
+}
+
+nav ul{
+    visibility: hidden;
+}
+
+.container{
+    width:80%;
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    position: relative;
+    top:-120px;
+    left:40px;
+}
+
+.description{
+    margin:0;
+    padding:1.5em;
+    width:80%;
+}
+
+.description img{
+    width:150px;
+}
+
+.description div{
+    width:80%;
+    padding:.5em;
+    position:relative;
+    left:30px;
+}
+
+.description p{
+    position: relative;
+    top:3%;
+    font-family: 'Poppins', sans-serif;
+    font-size: .85em;
+    font-weight:bold;
+    color: #24334A;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+
+.cta{
+    position:relative;
+    top:2%;
+    left:2%;
+}
+
+.cta a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #FE5244;
+    border:1px solid #FE5244;
+    border-radius:20px;
+    padding:.65em;
+}
+
+.header-img{
+    position: relative;
+    left:-24px;
+}
+svg{
+    display:flex;
+    justify-content: center;
+    width:330px;
+    height:300px;
+    position:relative;
+    top:10%;
+    left:3%;
+}
+
+
+main{
+    height:100vh;
+}
+
+.search-component{
+    position: relative;
+    left: 10%;
+    top: 30%;
+    width:40%;
+}
+
+.search-field{
+    width:180%;
+    padding:.75em;
+    background-color: #FAF9F9;
+    border:1px solid #FAF9F9;
+    border-radius: 20px;
+}
+
+.search-field input[type="text"]{
+    width:80%;
+    border:1px solid #FAF9F9;
+    background-color: #FAF9F9;
+    font-family: 'Poppins', sans-serif;
+    font-size: .85em;
+    font-weight:700;
+    color:#24334A;
+    outline:none;
+}
+
+.filter{
+    margin-top:.5em;
+    width:40%;
+    padding:.3em;
+    border: 2px solid #FE5244;
+    border-radius:10px;
+    font-family: 'Poppins', sans-serif;
+    color:#24334A;
+    font-size: .85em;
+    font-weight:bold;
+    text-align: center;
+}
+
+.filter-inputs{
+    position:absolute;
+    left:-15%;
+    width:160%;
+    padding:0;
+    margin:0;
+    display:flex;
+}
+
+.footer{
+    position:relative;
+    top:80%;
+    background-color:  #FE5244;
+    padding:1em;
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: .85em;
+    font-weight:bold;
+    width:100%;
 }
